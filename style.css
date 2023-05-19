@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Red Hat Display", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-image: url("./images/pattern-hills.svg"),
+    url(./images/bg-stars.svg);
+  background-position: bottom;
+  background-color: #201d2a;
+  background-repeat: no-repeat;
+  background-position-x: 30%;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20rem;
+  padding-top: 15%;
+}
+.clock {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.timer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  text-align: center;
+}
+.top {
+  /* flex: 1; */
+  background-color: #2c2e44;
+  width: 70px;
+  height: 33px;
+  border-radius: 4px;
+}
+.bottom {
+  /* flex: 1; */
+  background-color: #343650;
+  width: 70px;
+  height: 33px;
+  border-radius: 4px;
+}
+.date {
+  position: absolute;
+  color: #fb5e84;
+  height: 34px;
+  font-weight: 700;
+  line-height: 71px;
+  font-size: 36px;
+  top: 23.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+p {
+  color: #8385a9;
+  font-weight: 700;
+  line-height: 9px;
+  font-size: 7px;
+  height: 12px;
+  position: absolute;
+  top: 115%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.firstElement {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 4rem;
+}
+.mainHeading {
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 6.13636px;
+  text-transform: uppercase;
+  height: 48px;
+  width: 327px;
+}
+.icons {
+  display: flex;
+  justify-content: space-between;
+  gap: 2.5rem;
+}
+@media screen and (min-width: 768px) {
+  .clock {
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  .timer {
+    width: 150px;
+    height: 124px;
+  }
+  .top {
+    width: 150px;
+    height: 124px;
+  }
+  .bottom {
+    width: 150px;
+    height: 124px;
+  }
+  .firstElement {
+    align-items: center;
+    justify-content: space-between;
+    gap: 8rem;
+  }
+  .date {
+    top: 35.5%;
+    font-size: 80px;
+    line-height: 71px;
+  }
+  .container {
+    padding: 3rem;
+    justify-content: space-between;
+    gap: 17rem;
+  }
+  p {
+    height: 18px;
+    font-size: 14px;
+    line-height: 19px;
+  }
+  .svg:hover {
+    fill: #fb5e84;
+    cursor: pointer;
+  }
+  .mainHeading {
+    font-size: 22px;
+    line-height: 29px;
+    width: 450px;
+  }
+  body {
+    background-size: 100%;
+  }
+}
